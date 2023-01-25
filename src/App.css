@@ -1,38 +1,84 @@
-.App {
+body, html{
+  background: white;
+}
+h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.editor{
+  width: 50%;
+}
+#UNIQUE_ID_OF_DIV{
+  width: 50%;
+}
+.ace_print-margin{
+  right:0 !important;
+}
+main{  
+  background-color: white;
+  padding: 10px;
+  /* border-radius: 10px; */
+  height: 100vh;
+}
+iframe{
+  border:1px solid gray;
+  margin: 10px 0;
+  border-radius: 4px;
+  width: 100%;
+}
+.editor-wrap{
+  background: white;
+  padding: 10PX;
+}
+.editors button{
+  background:darkgray;
+  color: gray;
+}
+.editors .active{
+  background: white;
+  color:black;
+  border-bottom:0;
+  top: 2px;
+  margin-left: 5px;
+  position: relative;
+  border:black 1px solid;
+}
+.htmlPanel{
+  display: block;
+}
+.cssPanel{
+  display: none;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.promptPanel{
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.promptWall {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.promptPanel iframe{
+  display: none;
 }
-
-.App-link {
-  color: #61dafb;
+.joyful{
+  background:#F4FB0A;
+  transform:rotate(45deg);
+  width:100px;
+  height:100px;
+  margin:25px;
+  border-radius:50% 0;
+  box-shadow:2px 2px 3px #ccc;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quiz{
+  background: white;
+  padding: 12px;
+  border:1px solid gray;
+  border-radius: 5px;
+  height: 175px;
 }
