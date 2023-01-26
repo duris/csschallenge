@@ -69,19 +69,26 @@ const Editor = ({htmlStart, cssStart, initialSrc}) => {
         </html>
       `
     )
-    if(css.replace(/\s+/g, "") === `.joyful{
-      background:#F4FB0A;
-      transform:rotate(45deg);
-      width:100px;
-      height:100px;
-      margin:25px;
-      border-radius:50% 0;
-      box-shadow:2px 2px 3px #ccc;
-    }`.replace(/\s+/g, "") && html.replace(/\s+/g, "") === `<div class="joyful"></div>`.replace(/\s+/g, "")){
-      alert('success!');
-    }
-    }, 250)
+    
+    }, 350)
   }, [html, css, js])
+
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      if(css.replace(/\s+/g, "") === `.joyful{
+        background:#F4FB0A;
+        transform:rotate(45deg);
+        width:100px;
+        height:100px;
+        margin:25px;
+        border-radius:50% 0;
+        box-shadow:2px 2px 3px #ccc;
+      }`.replace(/\s+/g, "") && html.replace(/\s+/g, "") === `<div class="joyful"></div>`.replace(/\s+/g, "")){
+        alert('success!');
+      }
+      }, 500)
+    
+  }, [css])
 
 
   function toHtml(){
