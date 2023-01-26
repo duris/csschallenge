@@ -3,8 +3,10 @@ import Editor from './Editor';
 
 function App() {
 
-  const html = `<div class="lemon"></div>`
-  const css = `.lemon{
+  const html = `
+  <div class="lemon"></div>`
+  const css = `
+  .lemon{
     width:100px;
     height:100px;
     background:#F4FB0A;

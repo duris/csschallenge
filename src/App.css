@@ -82,3 +82,11 @@ main{
   border-radius: 5px;
   height: 175px;
 }
+@media only screen and (max-width:600px){
+  main{
+    grid-template-columns: 1fr;        
+  }
+  #UNIQUE_ID_OF_DIV{
+    font-size: 24px;
+  }
+}

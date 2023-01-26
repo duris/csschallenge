@@ -125,7 +125,8 @@ const Editor = ({htmlStart, cssStart, initialSrc}) => {
           theme="chaos"
           onChange={(e) => {setHtml(e)}}
           name="UNIQUE_ID_OF_DIV"
-          height='160px'          
+          height='260px'    
+          fontSize='16px'      
           width='100%'
           editorProps={{ $blockScrolling: true }}
         />
@@ -138,7 +139,8 @@ const Editor = ({htmlStart, cssStart, initialSrc}) => {
           theme="chaos"
           onChange={(e) => setCss(e)}
           name="UNIQUE_ID_OF_DIV"
-          height='160px'
+          height='260px'
+          fontSize='16px'
           width='100%'            
           enableBasicAutocompletion='true'    
           editorProps={{ $blockScrolling: true }}
