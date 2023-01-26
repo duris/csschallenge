@@ -30,7 +30,7 @@ function App() {
   <h1>Make the Lemon</h1>
   <main>    
     <div className='promptPanel'>
-      <div className='promptWall'></div>
+      {/* <div className='promptWall'></div> */}
       <Editor htmlStart={html} cssStart={css} initialSrc={initialSrc} />  
       <div className='quiz'>
         <div className='joyful'></div>
