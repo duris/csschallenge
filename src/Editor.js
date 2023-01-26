@@ -18,11 +18,11 @@ const Editor = ({htmlStart, cssStart, initialSrc}) => {
 
 
   const [code, setCode] = React.useState(
-    `.joyful{
-      background:#F4FB0A;
-      transform:rotate(45deg);
+    `.lemon{
       width:100px;
       height:100px;
+      background:#F4FB0A;
+      transform:rotate(45deg);
       margin:25px;
       border-radius:50% 0;
       box-shadow:2px 2px 3px #ccc;
@@ -75,18 +75,18 @@ const Editor = ({htmlStart, cssStart, initialSrc}) => {
 
   useEffect(() => {
     const timeOut = setTimeout(() => {
-      if(css.replace(/\s+/g, "") === `.joyful{
-        background:#F4FB0A;
-        transform:rotate(45deg);
+      if(css.replace(/\s+/g, "") === `.lemon{       
         width:100px;
         height:100px;
+        background:#F4FB0A;
+        transform:rotate(45deg);
         margin:25px;
         border-radius:50% 0;
         box-shadow:2px 2px 3px #ccc;
-      }`.replace(/\s+/g, "") && html.replace(/\s+/g, "") === `<div class="joyful"></div>`.replace(/\s+/g, "")){
+      }`.replace(/\s+/g, "") && html.replace(/\s+/g, "") === `<div class="lemon"></div>`.replace(/\s+/g, "")){
         alert('success!');
       }
-      }, 500)
+      }, 800)
     
   }, [css])
 

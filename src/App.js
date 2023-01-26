@@ -3,13 +3,13 @@ import Editor from './Editor';
 
 function App() {
 
-  const html = `<div class="joyful"></div>`
-  const css = `.joyful{
-    background:#F4FB0A;
-    transform:rotate(45deg);
+  const html = `<div class="lemon"></div>`
+  const css = `.lemon{
     width:100px;
     height:100px;
-    margin:25px;
+    background:#F4FB0A;
+    transform:rotate(45deg);
+    margin:25px;    
     border-radius:50% 0;
     box-shadow:2px 2px 3px #ccc;
   }`
