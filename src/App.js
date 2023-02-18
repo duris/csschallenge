@@ -33,7 +33,7 @@ function App() {
       {/* <div className='promptWall'></div> */}
       <Editor htmlStart={html} cssStart={css} initialSrc={initialSrc} />  
       <div className='quiz'>
-        <div className='joyful'></div>
+        <div className='lemon'></div>
       </div>    
     </div>
     <div className='userPanel'>
